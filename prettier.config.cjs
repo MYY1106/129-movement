@@ -1,10 +1,10 @@
 module.exports = {
     // 1.一行代码的最大字符数，默认是80(printWidth: <int>)
     printWidth: 80,
-    // 2.tab宽度为2空格(tabWidth: <int>)
+    // 2.tab宽度为4空格(tabWidth: <int>)
     tabWidth: 4,
     // 3.是否使用tab来缩进，我们使用空格(useTabs: <bool>)
-    useTabs: true,
+    useTabs: false,
     // 4.结尾是否添加分号，false的情况下只会在一些导致ASI错误的其工况下在开头加分号，我选择无分号结尾的风格(semi: <bool>)
     semi: false,
     // 5.使用单引号(singleQuote: <bool>)
