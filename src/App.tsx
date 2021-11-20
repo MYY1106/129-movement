@@ -11,7 +11,7 @@ const End = lazy(() => import('./views/End'))
 function App() {
   return (
     <Router>
-      <Switch>
+            <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/history" component={History}></Route>
         <Route exact path="/end" component={End}></Route>
