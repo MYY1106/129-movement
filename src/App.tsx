@@ -15,7 +15,7 @@ function App() {
 				<Route exact path="/" component={Home}></Route>
 				<Route exact path="/history" component={History}></Route>
 				<Route exact path="/end" component={End}></Route>
-			</Switch>
+</Switch>
 		</Router>
 	)
 }
