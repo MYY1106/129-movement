@@ -1,6 +1,6 @@
-import * as ReactDOM from 'react-dom';
-import App from './App';
+import * as ReactDOM from 'react-dom'
+import App from './App'
 
-const app = document.querySelector("#app")
+const app = document.querySelector('#app')
 
 ReactDOM.render(<App />, app)
