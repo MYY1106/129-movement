@@ -4,9 +4,9 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Home from './views/Home'
 
-const History = lazy(() => import('./views/History'))
+import History from './views/History'
 
-const End = lazy(() => import('./views/End'))
+import End from './views/End'
 
 function App() {
     return (
