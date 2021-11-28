@@ -3,6 +3,11 @@ import react from '@vitejs/plugin-react'
 import postcssPxToViewport from 'postcss-px-to-viewport'
 import autoprefixer from 'autoprefixer'
 
+const loderPostcssPxToViewport = postcssPxToViewport({
+    viewportWidth: 375,
+    viewportUnit: 'vw',
+})
+
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
@@ -11,7 +16,7 @@ export default defineConfig({
     },
     css: {
         postcss: {
-            plugins: [postcssPxToViewport, autoprefixer],
+            plugins: [loderPostcssPxToViewport, autoprefixer],
         },
     },
 })
