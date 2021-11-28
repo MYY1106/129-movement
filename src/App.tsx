@@ -2,6 +2,8 @@ import { ReactElement, lazy } from 'react'
 
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
+import '../src/assets/style/app.less'
+
 import Home from './views/Home'
 
 import History from './views/History'
