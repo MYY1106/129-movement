@@ -1,0 +1,34 @@
+div {
+    overflow: hidden;
+    .scroll-number-list {
+        list-style: none;
+        transform: translateY(calc((-1 * var(--oldi)) * var(--height)));
+        height: var(--height);
+        width: var(--width);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            font-size: calc(var(--height) - 2px);
+            height: var(--height);
+        }
+        // animation: move var(--duration) linear infinite;
+    }
+    .number-animation {
+        animation: move 1s linear infinite;
+    }
+
+    .number-no-animation {
+        animation: none;
+        transform: translateY(calc((-1 * var(--i)) * var(--height)));
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(calc(-1 * var(--height) * 9));
+    }
+    to {
+        transform: translateY(1%);
+    }
+}
