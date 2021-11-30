@@ -19,4 +19,7 @@ export default defineConfig({
             plugins: [loderPostcssPxToViewport, autoprefixer],
         },
     },
+    server: {
+        host: '0.0.0.0',
+    },
 })
