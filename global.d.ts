@@ -12,3 +12,5 @@ declare module '*.svg'
 declare module '*.css'
 declare module '*.js'
 declare module '*.mp3'
+
+declare module 'postcss-px-to-viewport'
