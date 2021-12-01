@@ -1,9 +1,17 @@
-import { Link } from 'react-router-dom'
+import { withRouter, RouteComponentProps } from 'react-router-dom'
+import styles from '../../assets/style/home.module.less'
 
-export default function Home() {
-	return (
-		<div>
-			<Link to="/history">历史回顾</Link>
-		</div>
-	)
+const Home: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
+    const goToLoading = () => props.history.push('/loading')
+    return (
+        <div className={styles['home-container']}>
+            <div className={styles['home-words']}>
+                <div
+                    className={styles['home-button']}
+                    onClick={goToLoading}
+                ></div>
+            </div>
+        </div>
+    )
 }
+export default withRouter(Home)

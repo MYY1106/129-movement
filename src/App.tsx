@@ -12,12 +12,16 @@ import End from './views/End'
 
 import EnhanceRouterMusic from './components/Music'
 
+import Loading from './views/Loading'
+
+
 function App() {
     return (
         <Router>
             <EnhanceRouterMusic></EnhanceRouterMusic>
             <Switch>
                 <Route exact path="/" component={Home}></Route>
+                <Route exact path="/loading" component={Loading}></Route>
                 <Route exact path="/history" component={History}></Route>
                 <Route exact path="/end" component={End}></Route>
             </Switch>
