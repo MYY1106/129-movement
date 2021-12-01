@@ -14,12 +14,12 @@ const ScrollNumber: React.FC<ScrollNumberProps> = props => {
     useEffect(() => {
         const addClassTimer = setTimeout(() => {
             ListNode?.classList.add(styles['number-animation'])
-        }, 2000)
+        }, 1500)
 
         const removeClassTimer = setTimeout(() => {
             ListNode?.classList.remove(styles['number-animation'])
             ListNode?.classList.add(styles['number-no-animation'])
-        }, 2000 + props.lastTime * 1000)
+        }, 1500 + props.lastTime * 1000)
 
         return () => {
             clearTimeout(addClassTimer)
@@ -27,10 +27,9 @@ const ScrollNumber: React.FC<ScrollNumberProps> = props => {
         }
     }, [])
     return (
-        <div>
+        <div className={styles['scroll-number-box']} style={style}>
             <ul
                 className={styles['scroll-number-list']}
-                style={style}
                 ref={currentNode => (ListNode = currentNode)}
             >
                 <li>0</li>

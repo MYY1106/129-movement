@@ -1,4 +1,5 @@
-div {
+.scroll-number-box {
+    height: var(--height);
     overflow: hidden;
     .scroll-number-list {
         list-style: none;
@@ -12,23 +13,65 @@ div {
             font-size: calc(var(--height) - 2px);
             height: var(--height);
         }
-        // animation: move var(--duration) linear infinite;
     }
     .number-animation {
-        animation: move 1s linear infinite;
+        animation: move var(--duration) linear infinite;
     }
 
     .number-no-animation {
         animation: none;
         transform: translateY(calc((-1 * var(--i)) * var(--height)));
+        animation: bounce-in-down 1s linear none;
     }
 }
 
 @keyframes move {
     from {
         transform: translateY(calc(-1 * var(--height) * 9));
+        filter: blur(0.5px);
     }
     to {
         transform: translateY(1%);
+        filter: blur(0.5px);
+    }
+}
+
+@keyframes bounce-in-down {
+    from {
+        transform: translateY(calc((-1 * var(--i)) * var(--height) - 7%));
+        filter: none;
+    }
+    25% {
+        transform: translateY(calc((-1 * var(--i)) * var(--height) + 3%));
+    }
+    50% {
+        transform: translateY(calc((-1 * var(--i)) * var(--height) - 1%));
+    }
+    70% {
+        transform: translateY(calc((-1 * var(--i)) * var(--height) + 0.6%));
+    }
+    85% {
+        transform: translateY(calc((-1 * var(--i)) * var(--height) - 0.3%));
+    }
+    to {
+        transform: translateY(calc((-1 * var(--i)) * var(--height)));
+    }
+}
+
+@keyframes enhance-bounce-in-down {
+    25% {
+        transform: translateY(8%);
+    }
+    50% {
+        transform: translateY(-4%);
+    }
+    70% {
+        transform: translateY(2%);
+    }
+    85% {
+        transform: translateY(-1%);
+    }
+    to {
+        transform: translateY(0);
     }
 }
