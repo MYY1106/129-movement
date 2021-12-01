@@ -2,8 +2,12 @@ import { withRouter, RouteComponentProps } from 'react-router-dom'
 import styles from '../../assets/style/loading.module.less'
 import '../../assets/style/font.less'
 import ScrollNumber from '../../components/ScrollNumber'
+import { useEffect } from 'react'
 
 const Home: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
+    useEffect(() => {
+        setTimeout(() => props.history.push('/history'), 7000)
+    }, [])
     return (
         <div className={styles['loading-container']}>
             <div className={styles['calendar']}>
