@@ -5,7 +5,12 @@ const Home: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
     const goToLoading = () => props.history.push('/loading')
     return (
         <div className={styles['home-container']}>
-            <div className={styles['home-button']} onClick={goToLoading}></div>
+            <div className={styles['home-words']}>
+                <div
+                    className={styles['home-button']}
+                    onClick={goToLoading}
+                ></div>
+            </div>
         </div>
     )
 }
