@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 
 const Home: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
     useEffect(() => {
-        // setTimeout(() => props.history.push('/history'), 7000)
+        setTimeout(() => props.history.push('/history'), 7000)
     }, [])
     return (
         <div className={styles['loading-container']}>
