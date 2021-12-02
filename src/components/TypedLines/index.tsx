@@ -8,9 +8,11 @@ const TypedLines: React.FC<TypedLinesProps> = (props: TypedLinesProps) => {
 
     useEffect(() => {
         typedItem.current = new Typed(element.current as string | Element, {
-            strings: props.lines,
-            typeSpeed: 1000,
-            backSpeed: 50,
+            strings: [props.lines],
+            startDelay:
+                (props.lastTimeTypedWords as number) * 210 || props.startDelay,
+            typeSpeed: 150,
+            showCursor: false,
         })
         return () => {
             typedItem.current!.destroy()
