@@ -6,8 +6,8 @@ const appear = (el: HTMLElement) => new Promise((resolve: Function) => {
             clearInterval(timer)
             resolve()
         }
-        opacity += 0.1
-    }, 300)
+        opacity += 0.05
+    }, 100)
 })
 
 const disappear = (el: HTMLElement) => new Promise((resolve: Function) => {
@@ -18,7 +18,7 @@ const disappear = (el: HTMLElement) => new Promise((resolve: Function) => {
             clearInterval(timer)
             resolve()
         }
-        opacity -= 0.1
+        opacity -= 0.05
     }, 300)
 })
 
