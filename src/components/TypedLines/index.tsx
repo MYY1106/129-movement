@@ -1,4 +1,4 @@
-import { useRef, useEffect, useMemo } from 'react'
+import { useRef, useEffect } from 'react'
 import Typed from 'typed.js'
 
 const TypedLines: React.FC<TypedLinesProps> = (props: TypedLinesProps) => {
