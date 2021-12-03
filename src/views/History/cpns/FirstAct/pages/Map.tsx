@@ -9,7 +9,9 @@ const Map: React.FC = () => {
                 <TypedLines lines="日本的魔爪伸向华北地图，于1935" />
                 <TypedLines lines="年发动华北事变。" lastTimeTypedWords={17} />
             </div>
-            <div className={styles['map']}></div>
+            <div
+                className={`${styles['map']} animate__animated animate__fadeIn`}
+            ></div>
             <div
                 className={`${styles['top-left-hand']} animate__animated animate__fadeInTopLeft`}
             ></div>
