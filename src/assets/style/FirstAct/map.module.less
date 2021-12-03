@@ -1,0 +1,50 @@
+@import url(../commonStyle.less);
+
+.map-container {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    .backgroundSet(url(../../imgs/history/firstAction/map-background.png));
+    .sentences-box {
+        box-sizing: border-box;
+        margin-top: 87px;
+        font-family: Aalzh;
+        font-size: 20px;
+        color: #ffffff;
+        height: 60px;
+        div {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .map {
+        width: 250px;
+        height: 389px;
+        .backgroundSet(url(../../imgs/history/firstAction/map-map.png));
+        margin:39px auto;
+        // opacity: 0;
+    }
+    .top-left-hand{
+        .handStyle(url(../../imgs/history/firstAction/map-top-left-hand.png), 103px, 49px);
+        top: 0;
+        left: 0;
+    }
+    .bottom-left-hand{
+        .handStyle(url(../../imgs/history/firstAction/map-bottom-left-hand.png), 100px, 79px);
+        bottom: 0;
+        left: 0;
+    }
+    .middle-right-hand{
+        .handStyle(url(../../imgs/history/firstAction/map-middle-right-hand.png), 150px, 143px);
+        top: 212px;
+        right: 0;
+    }
+    .bottom-right-hand{
+        .handStyle(url(../../imgs/history/firstAction/map-bottom-right-hand.png), 123px, 120px);
+        bottom: 0;
+        right: 0;
+    }
+}

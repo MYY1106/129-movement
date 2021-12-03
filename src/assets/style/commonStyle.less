@@ -1,0 +1,13 @@
+.backgroundSet(@imageUrl){
+    background-image: @imageUrl;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.handStyle(@imageUrl, @height, @width){
+    height: @height;
+    width: @width;
+    .backgroundSet(@imageUrl);
+    position: absolute;
+    --animate-duration: 6s;
+}

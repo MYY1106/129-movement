@@ -1,0 +1,33 @@
+@import url(../commonStyle.less);
+
+.contract-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    .backgroundSet(url(../../imgs/history/firstAction/contract-background.png));
+    .sentences-box {
+        height: 130px;
+        width: 300px;
+        margin: 93px auto 0 auto;
+        line-height: 32.5px;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: Aalzh;
+        white-space: pre-line;
+        --animate-duration: 3s;
+    }
+    .contract {
+        overflow: hidden;
+        width: 344px;
+        height: 308px;
+        margin: 46px auto 0 auto;
+        .backgroundSet(url(../../imgs/history/firstAction/contract-contract.png));
+        .contract-content {
+            width: 184px;
+            height: 186px;
+            margin: 43px auto 0 auto;
+            .backgroundSet(url(../../imgs/history/firstAction/contract-contract-content.png));
+            --animate-duration: 3s;
+          }
+    }
+}

@@ -1,5 +1,6 @@
+import FirstAct from './FirstAct'
 import SecondAct from "./SecondAct"
 import FourthAct from "./FourthAct"
 import SixthAct from './SixthAct'
 
-export { SecondAct, FourthAct, SixthAct }
+export { FirstAct, SecondAct, FourthAct, SixthAct }

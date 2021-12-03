@@ -1,10 +1,16 @@
 type TypedLinesProps = {
-    lines: Array<string>
+    lines: string
 
     /**
      * @property {number} typeSpeed 输入速度，以毫秒为单位
      */
-    typeSpeed?: 10
+    // typeSpeed?: number
+
+    /**
+     * @property {number} lastTimeTypedWords 上一次键入了多少个字（用于实现多行异步输出）
+     *
+     */
+    lastTimeTypedWords?: number
 
     /**
      * @property {number} startDelay 键入之前的时间以毫秒开始
@@ -19,7 +25,7 @@ type TypedLinesProps = {
     /**
      * @property {boolean} smartBackspace 是否只退格与前一个字符串不匹配的内容
      */
-    smartBackspace?: boolean
+    // smartBackspace?: boolean
 
     /**
      * @property {boolean} shuffle 是否洗牌
@@ -52,7 +58,7 @@ type TypedLinesProps = {
      * @property {string} cursorChar 光标的字符
      * @property {boolean} autoInsertCss 是否将光标和fadeOut的CSS插入HTML <head>
      */
-    // showCursor: true,
+    // showCursor: boolean,
     // cursorChar: '|',
     // autoInsertCss: true,
 
@@ -65,32 +71,32 @@ type TypedLinesProps = {
     /**
      * @property {boolean} bindInputFocusEvents 如果el是文本输入，则绑定到焦点和模糊
      */
-    bindInputFocusEvents?: false
+    // bindInputFocusEvents?: false
 
     /**
      * @property {string} contentType 明文的'html'或'null'
      */
-    contentType?: 'html'
+    // contentType?: 'html'
 
     /**
      * 所有打字都已完成调用的回调函数
      * @param {Typed} self
      */
-    onComplete?: () => {}
+    // onComplete?: () => {}
 
     /**
      * 在键入每个字符串之前调用的回调函数
      * @param {number} arrayPos
      * @param {Typed} self
      */
-    preStringTyped?: () => {}
+    // preStringTyped?: () => {}
 
     /**
      * 输入每个字符串后调用的回调函数
      * @param {number} arrayPos
      * @param {Typed} self
      */
-    onStringTyped?: () => {}
+    // onStringTyped?: () => {}
 
     //     /**
     //      * 在循环期间，在键入最后一个字符串之后调用的回调函数
