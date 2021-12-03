@@ -9,14 +9,17 @@ import styles from 'assets/style/end.module.less'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+enum INDEX {
+    one, two, three
+}
 
 export default function End() {
-    const [index, setIndex] = useState(0)
+    const [index, setIndex] = useState<INDEX>(0)
     const allSaying = [saying1, saying2, saying3]
     const changeSaying = () => {
-        index == 2 ? setIndex(index => index = 0) : setIndex(index => ++index)
+        // index == 2 ? setIndex(0) : setIndex(index + 1)
+        setIndex(index == 2 ? 0 : index + 1)
     }
-
     return (<>
         <main className={styles.main}>
             <div className={styles.words} >

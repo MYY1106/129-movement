@@ -14,6 +14,8 @@ import EnhanceRouterMusic from './components/Music'
 
 import Loading from './views/Loading'
 
+import 'animate.css'
+
 
 function App() {
     return (
