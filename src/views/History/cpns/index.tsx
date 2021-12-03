@@ -1,4 +1,5 @@
-import SecondAct from "./SecondAct"
-import FourthAct from "./FourthAct"
+import SecondAct from './SecondAct'
+import FourthAct from './FourthAct'
+import FirstAct from './FirstAct'
 
-export { SecondAct, FourthAct }
+export { FirstAct, SecondAct, FourthAct }
