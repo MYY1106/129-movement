@@ -1,0 +1,45 @@
+@import url(../commonStyle.less);
+
+.battle-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    .backgroundSet(url(../../imgs/History/ThirdAct/battle-background.png));
+    .sentence-box {
+        width: 305px;
+        height: 60px;
+        margin: 88px auto 0 auto;
+        font-family: Aalzh;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        div {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .newspaper {
+        width: 311px;
+        height: 237px;
+        position: absolute;
+        top: 274px;
+        left: 32px;
+        .backgroundSet(url(../../imgs/History/ThirdAct/battle-newspaper.png));
+    }
+    .newspaper-and-content {
+        width: 311px;
+        height: 237px;
+        position: absolute;
+        top: 274px;
+        left: 32px;
+        .backgroundSet(url(../../imgs/History/ThirdAct/battle-newspaper-content.png));
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+    .what {
+        display: none;
+        left: 0;
+    }
+}
