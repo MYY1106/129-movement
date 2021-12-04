@@ -3,6 +3,7 @@ interface ScrollNumberProps {
     lastTime: number
     speed: number
     oldNum: number
+    height: number
 }
 
 interface Style {

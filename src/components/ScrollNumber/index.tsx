@@ -8,7 +8,7 @@ const ScrollNumber: React.FC<ScrollNumberProps> = props => {
         '--i': props.num,
         '--color': 'skyblue',
         '--width': '30px',
-        '--height': '25px',
+        '--height': props.height + 'vw',
         '--duration': props.speed + 's',
     }
     useEffect(() => {

@@ -6,6 +6,7 @@ const Home: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
     return (
         <div className={styles['home-container']}>
             <div className={styles['home-words']}>
+                <div className={styles['home-seal']}></div>
                 <div
                     className={styles['home-button']}
                     onClick={goToLoading}
