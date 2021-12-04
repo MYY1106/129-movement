@@ -1,0 +1,40 @@
+@import url(../commonStyle.less);
+.proposal-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    .backgroundSet(url(../../imgs/History/FifthAct/proposal-background.png));
+    .sentence-box {
+        width: 356px;
+        margin: 131px 17px;
+        font-family: Aalzh;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        div {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .proposal {
+        width: 373px;
+        height: 398px;
+        position: absolute;
+        top: 189px;
+        right: 0;
+        .backgroundSet(url(../../imgs/History/FifthAct/proposal-proposal.png));
+    }
+    .proposal-and-content {
+        z-index: 1;
+        width: 373px;
+        height: 398px;
+        position: absolute;
+        top: 189px;
+        right: 0;
+        .backgroundSet(url(../../imgs/History/FifthAct/proposal-content.png));
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
