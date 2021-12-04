@@ -1,0 +1,45 @@
+@import url(../commonStyle.less);
+.resolution-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    .backgroundSet(url(../../imgs/History/FifthAct/resolution-background.png));
+    .sentence-box {
+        width: 314px;
+        height: 132px;
+        margin: 64px 45px;
+        font-family: Aalzh;
+        font-size: 20px;
+        line-height: 33px;
+        color: #ffffff;
+    }
+    .resolution {
+        width: 246px;
+        height: 255px;
+        position: relative;
+        margin: 64px auto 0 auto;
+        .backgroundSet(url(../../imgs/History/FifthAct/resolution-resolution.png));
+    }
+    .resolution-pass {
+        width: 65px;
+        height: 16px;
+        .backgroundSet(url(../../imgs/History/FifthAct/resolution-pass.png));
+        position: absolute;
+        bottom: 40px;
+        right: 25px;
+        display: none;
+    }
+    .resolution-seal {
+        width: 66px;
+        height: 66px;
+        .backgroundSet(url(../../imgs/History/FifthAct/resolution-seal.png));
+        position: absolute;
+        bottom: 16px;
+        right: 14px;
+        display: none;
+        --animate-duration: 1s;
+    }
+    .show {
+        display: block;
+    }
+}
