@@ -7,7 +7,7 @@ const WithRouterMusic = (): ReactElement => {
     const history = useHistory()
     const useMusic = useRef<HTMLDivElement>(null)
     const listenRoute = (pathname: string) => {
-        if (pathname === '/history') {
+        if (pathname === '/history' || pathname === '/loading') {
             useMusic.current!.className = style['history-music']
         } else if (pathname === '/end') {
             useMusic.current!.className = style['end-music']

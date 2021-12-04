@@ -10,7 +10,7 @@ enum actions {
 
 
 const History: FC = () => {
-	const [act, setAct] = useState<actions>(1)
+	const [act, setAct] = useState<actions>(0)
 	const [time, setTime] = useState<number>(2000)
 
 	let loading = true;
