@@ -1,0 +1,41 @@
+@import url(../commonStyle.less);
+
+.huang-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    .backgroundSet(url(../../imgs/History/ThirdAct/huang-Background.png));
+    .sentence-box {
+        width: 305px;
+        height: 60px;
+        margin: 88px auto 0 auto;
+        font-family: Aalzh;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        div {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .newspaper {
+        width: 323px;
+        height: 324px;
+        position: absolute;
+        top: 235px;
+        right: 0;
+        .backgroundSet(url(../../imgs/History/ThirdAct/huang-newspaper.png));
+    }
+    .newspaper-and-content {
+        width: 323px;
+        height: 324px;
+        position: absolute;
+        top: 235px;
+        right: 0;
+        .backgroundSet(url(../../imgs/History/ThirdAct/huang-newspaper-content.png));
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
