@@ -1,0 +1,34 @@
+@import url(../commonStyle.less);
+.movement-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    .backgroundSet(url(../../imgs/History/ThirdAct/movement-background.png));
+    .sentence-box {
+        width: 305px;
+        margin: 83px auto 0 auto;
+        font-family: Aalzh;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+    }
+    .newspaper {
+        width: 373px;
+        height: 398px;
+        position: absolute;
+        bottom: 0;
+        .backgroundSet(url(../../imgs/History/ThirdAct/movement-newspaper.png));
+    }
+    .newspaper-and-content {
+        z-index: 1;
+        width: 373px;
+        height: 398px;
+        position: absolute;
+        bottom: 0;
+        .backgroundSet(url(../../imgs/History/ThirdAct/movement-newspaper-content.png));
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
