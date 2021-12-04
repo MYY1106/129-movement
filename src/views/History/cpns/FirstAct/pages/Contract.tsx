@@ -1,9 +1,22 @@
+import { useEffect } from 'react'
 import styles from '../../../../../assets/style/FirstAct/contract.module.less'
 import 'animate.css'
 
-const Contract: React.FC = () => {
+const Contract: React.FC<PageProps> = ({ changeActive }) => {
+    let divNode: HTMLDivElement | null
+    useEffect(() => {
+        setTimeout(() => {
+            divNode!.addEventListener('click', () => {
+                changeActive('isStudentActive', true)
+                changeActive('isContractActive', false)
+            })
+        }, 4000)
+    }, [])
     return (
-        <div className={styles['contract-container']}>
+        <div
+            className={`${styles['contract-container']} animate__animated animate__fadeIn`}
+            ref={currentNode => (divNode = currentNode)}
+        >
             <div
                 className={`${styles['sentences-box']} animate__animated animate__fadeIn`}
             >
