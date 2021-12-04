@@ -1,13 +1,23 @@
-import { useEffect } from 'react'
-import { transition } from '../../../utils'
+import { useEffect, useState } from 'react'
 import styles from '../../../../../assets/style/FirstAct/black.module.less'
 import '../../../../../assets/style/font.less'
 import 'animate.css'
 
-const FirstAct: React.FC = () => {
+const Black: React.FC<PageProps> = ({ changeActive }) => {
     let divNode: HTMLDivElement | null
+    useEffect(() => {
+        setTimeout(() => {
+            divNode?.addEventListener('click', () => {
+                changeActive('isMapActive', true)
+                changeActive('isBlackActive', false)
+            })
+        }, 3000)
+    }, [])
     return (
-        <div className={styles['background']}>
+        <div
+            className={styles['background']}
+            ref={currentNode => (divNode = currentNode)}
+        >
             <div
                 className={`${styles['sentences-box']} animate__animated animate__fadeIn`}
             >
@@ -20,4 +30,4 @@ const FirstAct: React.FC = () => {
         </div>
     )
 }
-export default FirstAct
+export default Black
