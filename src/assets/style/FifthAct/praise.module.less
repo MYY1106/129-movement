@@ -1,0 +1,41 @@
+@import url(../commonStyle.less);
+.praise-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    .backgroundSet(url(../../imgs/History/FifthAct/praise-background.png));
+    .sentence-box {
+        width: 293px;
+        height: 60px;
+        margin: 99px auto 0 auto;
+        font-family: Aalzh;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        div {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .praise {
+        width: 330px;
+        height: 277px;
+        position: absolute;
+        top: 199px;
+        left: 23px;
+        .backgroundSet(url(../../imgs/History/FifthAct/praise-newspaper.png));
+    }
+    .praise-and-content {
+        z-index: 1;
+        width: 330px;
+        height: 277px;
+        position: absolute;
+        top: 199px;
+        left: 23px;
+        .backgroundSet(url(../../imgs/History/FifthAct/praise-content.png));
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+}
