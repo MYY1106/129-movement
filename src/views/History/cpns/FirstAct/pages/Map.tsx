@@ -11,7 +11,7 @@ const Map: React.FC<PageProps> = ({ changeActive }) => {
                 changeActive('isContractActive', true)
                 changeActive('isMapActive', false)
             })
-        }, 4000)
+        }, 5500)
     }, [])
     return (
         <div

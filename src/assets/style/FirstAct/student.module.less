@@ -4,34 +4,48 @@
     overflow: hidden;
     height: 100vh;
     width: 100vw;
-    .backgroundSet(url(../../imgs/History/firstAction/student-background.png));
+    .backgroundSet(url(../../imgs/History/FirstAct/student-background.png));
     .hands {
+        overflow: hidden;
         height: 569.2px;
         width: 375px;
-        .backgroundSet(url(../../imgs/History/firstAction/student-book.png));
-        .sentences-box {
-            height: 132px;
-            width: 300px;
-            margin: 93px auto 0 auto;
-            font-size: 20px;
-            color: #ffffff;
-            font-family: Aalzh;
-            line-height: 33px;
-            white-space: pre-line;
-        }
+        position: absolute;
+        bottom: 30px;
+        .backgroundSet(url(../../imgs/History/FirstAct/student-book.png));
+    }
+    .sentences-box {
+        height: 132px;
+        width: 300px;
+        margin: 110px auto 0 auto;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: Aalzh;
+        line-height: 33px;
+        white-space: pre-line;
     }
     .show-hands {
-        .backgroundSet(url(../../imgs/History/firstAction/student-hands.png));
+        overflow: hidden;
+        display: none;
+        height: 569.2px;
+        width: 375px;
+        .backgroundSet(url(../../imgs/History/FirstAct/student-hands.png));
+        position: absolute;
+        bottom: 30px;
+        left: -1px;
     }
     .anger {
+        z-index: 1;
         height: 145px;
         width: 375px;
-        .backgroundSet(url(../../imgs/History/firstAction/student-anger.png));
+        .backgroundSet(url(../../imgs/History/FirstAct/student-anger.png));
         position: absolute;
-        top: 177px;
+        bottom: 281px;
         display: none;
     }
-    .show-anger {
+    .show {
         display: block;
+    }
+    .hidden {
+        display: none;
     }
 }

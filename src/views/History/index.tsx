@@ -39,7 +39,7 @@ const History: FC = () => {
     })
 
     return (
-        <>
+        <div style={{ backgroundColor: 'black', zIndex: '-100' }}>
             {(() => {
                 if (act === 0) {
                     return <FirstAct nextAct={changeAct} />
@@ -55,7 +55,7 @@ const History: FC = () => {
                     return <SixthAct />
                 }
             })()}
-        </>
+        </div>
     )
 }
 
