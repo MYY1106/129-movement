@@ -8,7 +8,7 @@ import emotion from "assets/imgs/History/Second/emotion.png"
 import Line from "../../../../../components/Lines"
 
 const Black: FC<fnProps> = ({ changeAct }) => {
-    return (<div className={styles["sec-bg-people"] + " " + styles["sec-bg"]} onClick={() => changeAct(6000)}>
+    return (<div className={styles["sec-bg-people"] + " " + styles["sec-bg"]} onClick={() => changeAct(2000)}>
         <article className={styles["sec-words"] + " animate__animated animate__fadeIn"}>
             <Line mode="sentence">
                 {`在会议室内，北平市学生联合会
