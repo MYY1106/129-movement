@@ -27,7 +27,7 @@ const SectionAct: FC<typeProps> = ({ nextAct }) => {
     const touchLetterEnd = (e: TouchEvent) => {
         const x = e.changedTouches[0].clientX
         const y = e.changedTouches[0].clientY
-        if (Math.abs(x - startPosition.x) > 80 && Math.abs(y - startPosition.y) < 30) {
+        if (Math.abs(x - startPosition.x) > 130 && Math.abs(y - startPosition.y) < 30) {
             setAct(act + 1)
         }
     }

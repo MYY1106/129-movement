@@ -50,11 +50,9 @@ const Music: FC<IMusic> = ({ loop = true }): ReactElement => {
         }
         else {
             audio.pause();
-            console.log('1')
         }
         isPlay = !isPlay;
     }
-
     return (
         <div className={style.music} ref={useControl} onClick={controlAudio}></div>)
 }
