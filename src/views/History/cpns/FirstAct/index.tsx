@@ -27,7 +27,8 @@ const FirstAct: React.FC<FirstActProps> = ({ nextAct }) => {
 
     return (
         <div>
-            {(() => {
+            <Student changeActive={changeNotActive} />
+            {/* {(() => {
                 if (actActiveConfig.isBlackActive)
                     return <Black changeActive={changeNotActive} />
                 if (actActiveConfig.isMapActive)
@@ -41,7 +42,7 @@ const FirstAct: React.FC<FirstActProps> = ({ nextAct }) => {
                             changeAct={nextAct}
                         />
                     )
-            })()}
+            })()} */}
         </div>
     )
 }

@@ -9,9 +9,10 @@ const TypedLines: React.FC<TypedLinesProps> = (props: TypedLinesProps) => {
     useEffect(() => {
         typedItem.current = new Typed(element.current as string | Element, {
             strings: [props.lines],
-            startDelay:
-                (props.lastTimeTypedWords as number) * 190 || props.startDelay,
-            typeSpeed: 130,
+            startDelay: props.fastForward
+                ? (props.lastTimeTypedWords as number) * 105
+                : (props.lastTimeTypedWords as number) * 190,
+            typeSpeed: props.fastForward ? 65 : 130,
             showCursor: false,
         })
         return () => {

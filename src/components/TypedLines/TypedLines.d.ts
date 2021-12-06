@@ -4,7 +4,8 @@ type TypedLinesProps = {
     /**
      * @property {number} typeSpeed 输入速度，以毫秒为单位
      */
-    // typeSpeed?: number
+
+    fastForward?: boolean
 
     /**
      * @property {number} lastTimeTypedWords 上一次键入了多少个字（用于实现多行异步输出）
@@ -15,7 +16,7 @@ type TypedLinesProps = {
     /**
      * @property {number} startDelay 键入之前的时间以毫秒开始
      */
-    startDelay?: number
+    // startDelay?: number
 
     /**
      * @property {number} backSpeed 退格速度，以毫秒为单位
