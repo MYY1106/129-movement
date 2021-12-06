@@ -13,7 +13,7 @@ const showSentence = async (el: HTMLDivElement, sentences: string[], t: number) 
     for (let i = 0; i < sentences.length; i++) {
         i < sentences.length - 1 ? context += sentences[i] + "，" : context += sentences[i]
         el.textContent = context
-        await sleep(t * 3)
+        await sleep(t * 4)
     }
 }
 
@@ -28,7 +28,6 @@ const ShowLine: FC<typeProps> = ({ children, mode, time = 500 }): ReactElement =
     const container = useRef<HTMLDivElement>(null)
     useEffect(() => {
         if (mode === 'sentence') {
-
             const sentences = children.split("，");
             showSentence(container.current!, sentences, time)
         } else if (mode === 'word') {

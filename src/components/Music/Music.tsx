@@ -1,5 +1,4 @@
 import { ReactElement, useState, useRef, FC, forwardRef } from "react"
-import PropTypes from "prop-types"
 import style from 'assets/style/music.module.less'
 import bgm from 'assets/music/找回我的精神.mp3'
 
@@ -26,7 +25,6 @@ const Music: FC<IMusic> = ({ loop = true }): ReactElement => {
     function autoPlayMusic() {
         audio.play()
         touchTimes++;
-        console.log("majs")
         if (touchTimes == 2) {
             document.removeEventListener('touchstart', autoPlayMusic);
             isPlay = true
@@ -45,16 +43,20 @@ const Music: FC<IMusic> = ({ loop = true }): ReactElement => {
 
     // 控制音乐播放和暂停
     const controlAudio = () => {
+        console.log('test')
         if (!isPlay) {
             audio.play();
             window.requestAnimationFrame(playAnimation)
         }
-        else audio.pause();
+        else {
+            audio.pause();
+            console.log('1')
+        }
         isPlay = !isPlay;
     }
 
     return (
-        <div className={style.music} ref={useControl} onTouchStart={controlAudio}></div>)
+        <div className={style.music} ref={useControl} onClick={controlAudio}></div>)
 }
 
 export default Music;
