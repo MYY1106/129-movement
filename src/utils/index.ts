@@ -1,3 +1,4 @@
 import sleep from './sleep';
+import transition from './transition';
 
-export { sleep }
+export { sleep, transition }
