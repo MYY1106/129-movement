@@ -11,7 +11,7 @@ const Contract: React.FC<PageProps> = ({ changeActive }) => {
                 changeActive('isStudentActive', true)
                 changeActive('isContractActive', false)
             })
-        }, 10000)
+        }, 6500)
     }, [])
     return (
         <div
@@ -21,16 +21,30 @@ const Contract: React.FC<PageProps> = ({ changeActive }) => {
             <div
                 className={`${styles['sentences-box']} animate__animated animate__fadeIn`}
             >
-                <TypedLines lines="国民党政府签下“何梅协定”和" />
                 <TypedLines
-                    lines="“秦土协定”把包括平津在内的"
-                    lastTimeTypedWords={15}
+                    lines="在日军的武力威胁下，国民党政"
+                    fastForward={true}
                 />
                 <TypedLines
-                    lines="河北、察哈尔两省的大部分主权"
-                    lastTimeTypedWords={29}
+                    lines="府签下“何梅协定”和“秦土协"
+                    fastForward={true}
+                    lastTimeTypedWords={14}
                 />
-                <TypedLines lines="奉送给日本。" lastTimeTypedWords={43} />
+                <TypedLines
+                    lines="定”把包括平津在内的河北、察"
+                    fastForward={true}
+                    lastTimeTypedWords={28}
+                />
+                <TypedLines
+                    lines="哈尔两省的大部分主权奉送给日"
+                    fastForward={true}
+                    lastTimeTypedWords={42}
+                />
+                <TypedLines
+                    lines="本。"
+                    fastForward={true}
+                    lastTimeTypedWords={56}
+                />
             </div>
             <div className={styles['contract']}>
                 <div

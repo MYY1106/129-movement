@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Lines from '../../../../../components/Lines'
+import TypedLines from '../../../../../components/TypedLines'
 import styles from '../../../../../assets/style/FirstAct/student.module.less'
 import 'animate.css'
 
@@ -14,7 +14,7 @@ const Student: React.FC<PageProps> = ({ changeAct }) => {
                 handsNode?.classList.add(styles['show'])
                 deskNode?.classList.add(styles['hidden'])
                 resolve('show hands success!!')
-            }, 3000)
+            }, 4000)
         })
             .then(() => {
                 return new Promise(resolve => {
@@ -29,7 +29,7 @@ const Student: React.FC<PageProps> = ({ changeAct }) => {
                     divNode?.addEventListener('click', () => {
                         ;(changeAct as Function)(2000)
                     })
-                }, 1000)
+                }, 2200)
             })
     })
 
@@ -43,9 +43,25 @@ const Student: React.FC<PageProps> = ({ changeAct }) => {
                 ref={currentNode => (deskNode = currentNode)}
             ></div>
             <div className={styles['sentences-box']}>
-                <Lines mode="sentence">
-                    {`国民党政府坚持不抵抗政策，在\n民族危亡时刻，北平爱国学生感\n到“华北之大,已经安放不下一张\n平静的书桌了！”`}
-                </Lines>
+                <TypedLines
+                    lines="日军全面侵略华北，国民党却坚"
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="持不抵抗，民族危亡时刻，爱国"
+                    lastTimeTypedWords={14}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="青年发出呐喊 “ 华北之大,已经"
+                    lastTimeTypedWords={30}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="安放不下一张平静的书桌了 ”"
+                    lastTimeTypedWords={44}
+                    fastForward={true}
+                />
             </div>
             <div
                 className={`${styles['anger']} animate__animated animate__fadeIn`}

@@ -10,7 +10,7 @@ const Praise: React.FC<PageProps> = ({ changeActive }) => {
             setTimeout(() => {
                 praiseContentNode?.classList.add(styles['show'])
                 resolve('show praise success!!')
-            }, 5000)
+            }, 5300)
         }).then(() => {
             divNode!.addEventListener('click', () => {
                 changeActive('isPraiseActive', false)
@@ -24,9 +24,9 @@ const Praise: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentence-box']}>
-                <TypedLines lines="鲁迅、宋庆龄等爱国知名人士发" />
+                <TypedLines lines="宋庆龄、鲁迅、陶行知等爱国知" />
                 <TypedLines
-                    lines="文赞扬爱国学生的英勇奋斗精神"
+                    lines="名人士纷纷表示支持学生运动。"
                     lastTimeTypedWords={14}
                 />
             </div>

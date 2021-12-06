@@ -11,7 +11,7 @@ const Black: React.FC<PageProps> = ({ changeActive }) => {
                 changeActive('isBlackActive', false)
                 changeActive('isMovementActive', true)
             })
-        }, 6000)
+        }, 2000)
     }, [])
     return (
         <div
@@ -19,11 +19,8 @@ const Black: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentences-box']}>
-                <TypedLines lines="1935年12月9日凌晨，广大爱国学" />
-                <TypedLines
-                    lines="生的抗日怒火像火山一样爆发"
-                    lastTimeTypedWords={18}
-                />
+                {`1935年12月9日凌晨，广大爱国学
+                生的抗日怒火像火山一样爆发`}
             </div>
         </div>
     )
