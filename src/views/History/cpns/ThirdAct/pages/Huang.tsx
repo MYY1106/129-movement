@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import TypedLines from '../../../../../components/TypedLines'
+import Lines from '../../../../../components/Lines'
 import styles from '../../../../../assets/style/ThirdAct/huang.module.less'
 import 'animate.css'
 
@@ -27,11 +27,9 @@ const Huang: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentence-box']}>
-                <TypedLines lines="北京大学学生黄敬扶着电车向群" />
-                <TypedLines
-                    lines="众讲话“人民！武装你们自己！"
-                    lastTimeTypedWords={14}
-                />
+                <Lines mode="sentence">
+                    {`上午11时许， 北平爱国学生和广\n大工人 、农民 、市民3万余人召\n开市民大会。图为黄敬同志扶着\n电车向群众讲话“人民！武装你\n们自己！”`}
+                </Lines>
             </div>
             <div className={styles['newspaper']}></div>
             <div
