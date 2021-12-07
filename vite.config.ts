@@ -12,7 +12,7 @@ const loderPostcssPxToViewport = postcssPxToViewport({
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
-    base: '/anti-ghost/',
+    base: "/anti-ghost/",
     resolve: {
         alias: [
             {

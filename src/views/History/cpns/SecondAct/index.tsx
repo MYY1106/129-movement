@@ -28,6 +28,7 @@ const SectionAct: FC<typeProps> = ({ nextAct }) => {
         const x = e.changedTouches[0].clientX
         const y = e.changedTouches[0].clientY
         if (Math.abs(x - startPosition.x) > 130 && Math.abs(y - startPosition.y) < 30) {
+            time = 4000;
             setAct(act + 1)
         }
     }

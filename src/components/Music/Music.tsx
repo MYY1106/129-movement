@@ -1,6 +1,6 @@
 import { ReactElement, useState, useRef, FC, forwardRef } from "react"
 import style from 'assets/style/music.module.less'
-import bgm from 'assets/music/找回我的精神.mp3'
+import bgm from 'assets/music/bgm.mp3'
 
 interface IMusic {
     loop: boolean,

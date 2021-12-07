@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { fnProps } from '../type'
 
-import styles from "../../../styles/four.module.less"
+import styles from "../four.module.less"
 import photo1 from "assets/imgs/History/Fourth/photo1.png"
 import photo2 from "assets/imgs/History/Fourth/photo2.png"
 import photo3 from "assets/imgs/History/Fourth/photo3.png"

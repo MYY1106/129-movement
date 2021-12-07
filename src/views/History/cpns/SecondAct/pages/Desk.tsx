@@ -8,13 +8,14 @@ import emotion from "assets/imgs/History/Second/emotion.png"
 import Line from "../../../../../components/Lines"
 
 const Black: FC<fnProps> = ({ changeAct }) => {
-    return (<div className={styles["sec-bg-people"] + " " + styles["sec-bg"]} onClick={() => changeAct(6000)}>
+    return (<div className={styles["sec-bg-people"] + " " + styles["sec-bg"]} onClick={() => changeAct(2000)}>
         <article className={styles["sec-words"] + " animate__animated animate__fadeIn"}>
             <Line mode="sentence">
-                {`在会议室内，北平市学生联合会
-            主席郭明秋说出会议决定“12月
-            9日我们举行学生大请愿，反对
-            华北自治！”`}
+                {`当国民党将于12月9日成立 “冀
+                察政务委员会”的消息传来之时
+                北平学联在中共北平临时工委的
+                领导下 ，决定于9日举行学生大
+                请愿。`}
             </Line>
         </article>
         <img src={desk} className={styles["sec-desk"]} />
