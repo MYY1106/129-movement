@@ -18,7 +18,7 @@ enum actions {
 }
 
 const History: FC = () => {
-	const [act, setAct] = useState<actions>(0)
+	const [act, setAct] = useState<actions>(3)
 	const [time, setTime] = useState<number>(2000)
 
 	let loading = true
@@ -26,6 +26,7 @@ const History: FC = () => {
 	const changeAct = (t: number) => {
 		if (!loading) {
 			setTime(t)
+			console.log(time)
 			act >= 5 ? setAct(0) : setAct(act + 1)
 		}
 	}
@@ -36,9 +37,8 @@ const History: FC = () => {
 		}, time)
 	})
 
-<<<<<<< HEAD
 	return (
-		<>
+		<div style={{ backgroundColor: 'black', zIndex: '-100' }}>
 			{(() => {
 				if (act === 0) {
 					return <FirstAct nextAct={changeAct} />
@@ -54,29 +54,8 @@ const History: FC = () => {
 					return <SixthAct />
 				}
 			})()}
-		</>
+		</div>
 	)
-=======
-    return (
-        <div style={{ backgroundColor: 'black', zIndex: '-100' }}>
-            {(() => {
-                if (act === 0) {
-                    return <FirstAct nextAct={changeAct} />
-                } else if (act === 1) {
-                    return <SecondAct nextAct={changeAct} />
-                } else if (act === 2) {
-                    return <ThirdAct nextAct={changeAct} />
-                } else if (act === 3) {
-                    return <FourthAct nextAct={changeAct} />
-                } else if (act === 4) {
-                    return <FifthAct nextAct={changeAct} />
-                } else if (act === 5) {
-                    return <SixthAct />
-                }
-            })()}
-        </div>
-    )
->>>>>>> master
 }
 
 export default History

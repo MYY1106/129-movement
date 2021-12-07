@@ -26,8 +26,7 @@ const FourthAct: FC<typeProps> = ({ nextAct }) => {
                     return (<Black changeAct={changeAct} />)
                 } else if (act === 1) {
                     return (<Map changeAct={changeAct} />)
-                }
-                else if (act === 2) {
+                } else if (act === 2) {
                     return (<Photos changeAct={nextAct} />);
                 }
             })()}
