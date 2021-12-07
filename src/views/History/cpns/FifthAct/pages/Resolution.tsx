@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Lines from '../../../../../components/Lines'
+import TypedLines from '../../../../../components/TypedLines'
 import styles from '../../../../../assets/style/FifthAct/resolution.module.less'
 import 'animate.css'
 
@@ -22,8 +23,8 @@ const Resolution: React.FC<PageProps> = ({ changeAct }) => {
         new Promise(resolve => {
             setTimeout(() => {
                 passNode?.classList.add(styles['show'])
-                resolve('show proposal success!!')
-            }, 5000)
+                resolve('show resolution success!!')
+            }, 5600)
         })
     }, [])
     return (
@@ -32,7 +33,25 @@ const Resolution: React.FC<PageProps> = ({ changeAct }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentence-box']}>
-                <Lines mode="sentence">{`通过了反对“冀察政务委员会”，\n要求停止内战、一致对外，收复\n东北失地，争取抗日和爱国自由\n的决议案`}</Lines>
+                <TypedLines
+                    lines="1 2月9日举行的市民大会通过了"
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="反对冀察政务委员会，要求停止"
+                    lastTimeTypedWords={16}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="内战、一致对外，争取抗日等 8"
+                    lastTimeTypedWords={30}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="个决议案"
+                    lastTimeTypedWords={45}
+                    fastForward={true}
+                />
             </div>
             <div className={styles['resolution']}>
                 <div

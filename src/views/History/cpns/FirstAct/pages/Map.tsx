@@ -11,7 +11,7 @@ const Map: React.FC<PageProps> = ({ changeActive }) => {
                 changeActive('isContractActive', true)
                 changeActive('isMapActive', false)
             })
-        }, 4000)
+        }, 5500)
     }, [])
     return (
         <div
@@ -20,8 +20,25 @@ const Map: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentences-box']}>
-                <TypedLines lines="日本的魔爪伸向华北地图，于1935" />
-                <TypedLines lines="年发动华北事变。" lastTimeTypedWords={17} />
+                <TypedLines
+                    lines="1935年，日本侵略军在国民党的不"
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="抵抗政策下更加猖獗，继九一八事"
+                    lastTimeTypedWords={16}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="变后，又密谋策划，蚕食侵犯华北"
+                    lastTimeTypedWords={31}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="地区。"
+                    lastTimeTypedWords={46}
+                    fastForward={true}
+                />
             </div>
             <div
                 className={`${styles['map']} animate__animated animate__fadeIn`}

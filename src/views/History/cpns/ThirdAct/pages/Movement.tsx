@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Lines from '../../../../../components/Lines'
+import TypedLines from '../../../../../components/TypedLines'
 import styles from '../../../../../assets/style/ThirdAct/movement.module.less'
 import 'animate.css'
 
@@ -11,14 +11,14 @@ const Movement: React.FC<PageProps> = ({ changeActive }) => {
             setTimeout(() => {
                 newspaperContentNode?.classList.add(styles['show'])
                 resolve('show newspaper success!!')
-            }, 1500)
+            }, 2000)
         }).then(() => {
             setTimeout(() => {
                 divNode!.addEventListener('click', () => {
                     changeActive('isMovementActive', false)
                     changeActive('isHuangActive', true)
                 })
-            }, 2200)
+            }, 4500)
         })
     })
     return (
@@ -27,9 +27,30 @@ const Movement: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentence-box']}>
-                <Lines mode="sentence">
-                    {`游行画面，横幅口号“全国武装\n起来，保卫华北！”“反对防共\n自治运动！反对卖国的外交政\n策！”`}
-                </Lines>
+                <TypedLines
+                    lines="十点半，新华门前汇集了许多请"
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="愿队伍。请愿学生高举旗帜，高"
+                    lastTimeTypedWords={14}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="呼抗日救国口号，提出了反对成"
+                    lastTimeTypedWords={28}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="立防共自治委员会、停止内战等"
+                    lastTimeTypedWords={42}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="要求"
+                    lastTimeTypedWords={56}
+                    fastForward={true}
+                />
             </div>
             <div className={styles['newspaper']}></div>
             <div

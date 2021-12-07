@@ -36,6 +36,7 @@ const History: FC = () => {
 		}, time)
 	})
 
+<<<<<<< HEAD
 	return (
 		<>
 			{(() => {
@@ -55,6 +56,27 @@ const History: FC = () => {
 			})()}
 		</>
 	)
+=======
+    return (
+        <div style={{ backgroundColor: 'black', zIndex: '-100' }}>
+            {(() => {
+                if (act === 0) {
+                    return <FirstAct nextAct={changeAct} />
+                } else if (act === 1) {
+                    return <SecondAct nextAct={changeAct} />
+                } else if (act === 2) {
+                    return <ThirdAct nextAct={changeAct} />
+                } else if (act === 3) {
+                    return <FourthAct nextAct={changeAct} />
+                } else if (act === 4) {
+                    return <FifthAct nextAct={changeAct} />
+                } else if (act === 5) {
+                    return <SixthAct />
+                }
+            })()}
+        </div>
+    )
+>>>>>>> master
 }
 
 export default History

@@ -13,10 +13,12 @@ const Proposal: React.FC<PageProps> = ({ changeActive }) => {
                 resolve('show proposal success!!')
             }, 3000)
         }).then(() => {
-            divNode!.addEventListener('click', () => {
-                changeActive('isProposalActive', false)
-                changeActive('isPraiseActive', true)
-            })
+            setTimeout(() => {
+                divNode!.addEventListener('click', () => {
+                    changeActive('isProposalActive', false)
+                    changeActive('isPraiseActive', true)
+                })
+            }, 3300)
         })
     }, [])
     return (
@@ -25,7 +27,11 @@ const Proposal: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentence-box']}>
-                <TypedLines lines="《为援助北平学生救国运动告工友书》" />
+                <TypedLines lines="12月18日，中华全国总工会发表" />
+                <TypedLines
+                    lines="《为援助北平学生救国运动告工友书》"
+                    lastTimeTypedWords={16}
+                />
             </div>
             <div className={styles['proposal']}></div>
             <div

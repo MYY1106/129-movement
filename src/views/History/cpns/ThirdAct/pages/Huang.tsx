@@ -11,14 +11,14 @@ const Huang: React.FC<PageProps> = ({ changeActive }) => {
             setTimeout(() => {
                 newspaperContentNode?.classList.add(styles['show'])
                 resolve('newpaper success')
-            }, 4000)
+            }, 5500)
         }).then(() => {
             setTimeout(() => {
                 divNode!.addEventListener('click', () => {
                     changeActive('isHuangActive', false)
                     changeActive('isBattleActive', true)
                 })
-            }, 2200)
+            }, 1500)
         })
     })
     return (
@@ -27,10 +27,29 @@ const Huang: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentence-box']}>
-                <TypedLines lines="北京大学学生黄敬扶着电车向群" />
                 <TypedLines
-                    lines="众讲话“人民！武装你们自己！"
-                    lastTimeTypedWords={14}
+                    lines="上午11时许， 北平爱国学生和广"
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="大工人 、农民 、市民3万余人召"
+                    fastForward={true}
+                    lastTimeTypedWords={16}
+                />
+                <TypedLines
+                    lines="开市民大会。图为黄敬同志扶着"
+                    fastForward={true}
+                    lastTimeTypedWords={32}
+                />
+                <TypedLines
+                    lines="电车向群众讲话“人民！武装你"
+                    fastForward={true}
+                    lastTimeTypedWords={46}
+                />
+                <TypedLines
+                    lines="们自己！”"
+                    fastForward={true}
+                    lastTimeTypedWords={60}
                 />
             </div>
             <div className={styles['newspaper']}></div>

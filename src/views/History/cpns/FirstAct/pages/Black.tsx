@@ -11,7 +11,7 @@ const Black: React.FC<PageProps> = ({ changeActive }) => {
                 changeActive('isMapActive', true)
                 changeActive('isBlackActive', false)
             })
-        }, 3000)
+        }, 2000)
     }, [])
     return (
         <div

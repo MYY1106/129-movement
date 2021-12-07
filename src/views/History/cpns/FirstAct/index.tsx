@@ -26,7 +26,7 @@ const FirstAct: React.FC<FirstActProps> = ({ nextAct }) => {
     }, [])
 
     return (
-        <div style={{ backgroundColor: 'black', zIndex: '-100' }}>
+        <div>
             {(() => {
                 if (actActiveConfig.isBlackActive)
                     return <Black changeActive={changeNotActive} />

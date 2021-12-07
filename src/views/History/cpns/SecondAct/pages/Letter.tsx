@@ -7,7 +7,11 @@ import letterWord from "assets/imgs/History/Second/letter-word.png"
 
 
 const Letter: FC<fnProps> = ({ changeAct }) => {
+<<<<<<< HEAD
     return (<div className={styles["sec-bg-door"] + " " + styles["sec-bg"]} onClick={() => changeAct(4500)}>
+=======
+    return (<div className={styles["sec-bg-door"] + " " + styles["sec-bg"]} onClick={() => changeAct(4000)}>
+>>>>>>> master
         <article className={styles["sec-words"]}>
             <Line mode="sentence">
                 {`一名共产党员打开信封，信封上

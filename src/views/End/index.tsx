@@ -4,6 +4,7 @@ import change from 'assets/imgs/End/change.png';
 import saying1 from 'assets/imgs/End/saying1.png';
 import saying2 from 'assets/imgs/End/saying2.png';
 import saying3 from 'assets/imgs/End/saying3.png';
+import end from './pic.png'
 
 import styles from 'assets/style/end.module.less'
 import { useState } from 'react'
