@@ -23,8 +23,8 @@ export default function End() {
         <main className={styles.main}>
             <img className={styles['saying']} src={allSaying[index]} />
             <div className={styles.words} >
-                <img className={styles['change-saying-btn']} onClick={changeSaying} src={change} />
-                <Link to="/history"><img className={styles['return-btn']} src={back} /></Link>
+                <div className={styles['change-saying-btn']} onClick={changeSaying} />
+                <Link to="/history"><div className={styles['return-btn']} /></Link>
             </div>
         </main>
     </>)
