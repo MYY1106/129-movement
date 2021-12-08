@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 import { fnProps } from '../type'
 import styles from "../../../styles/sec.module.less"
 
@@ -8,7 +8,18 @@ import emotion from "assets/imgs/History/Second/emotion.png"
 import Line from "../../../../../components/Lines"
 
 const Black: FC<fnProps> = ({ changeAct }) => {
-    return (<div className={styles["sec-bg-people"] + " " + styles["sec-bg"]} onClick={() => changeAct(2000)}>
+    let isloading = true
+    const nextChange = () => {
+        if (!isloading) {
+            changeAct(2000)
+        }
+    }
+    useEffect(() => {
+        setTimeout(() => {
+            isloading = false
+        }, 4000)
+    })
+    return (<div className={styles["sec-bg-people"] + " " + styles["sec-bg"]} onClick={nextChange}>
         <article className={styles["sec-words"] + " animate__animated animate__fadeIn"}>
             <Line mode="word" time={20}>
                 {`当国民党将于12月9日成立 “冀

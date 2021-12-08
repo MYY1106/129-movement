@@ -17,17 +17,17 @@ const SixthAct: FC = () => {
     })
     return (<div className={styles["six-bg-black"] + " " + styles["six-bg"]} onClick={toBeEnd}>
         <main className={styles["six-words"] + " animate__animated animate__fadeIn"} >
-            一二九运动 ，它是伟大抗日战争的
+            一二·九运动 ，它是伟大抗日战争的
             <br />
             准备， 这同五四运动是死一次大革
             <br />
-            命的准备一样。 “一二九”推动了
+            命的准备一样。 “一二·九”推动了
             <br />
             “七 七”抗战，准备了“七 七”抗
             <br />
             战
             <br />
-            一 二 九运动是动员全民族抗战的运
+            一二·九运动是动员全民族抗战的运
             <br />
             动,它准备了抗战的思想，准备了抗
             <br />
