@@ -9,9 +9,11 @@ const News: FC<fnProps> = ({ changeAct }) => {
     return (<div className={styles["sec-bg-bicycle"] + " " + styles["sec-bg"]} onClick={() => changeAct(2000)}>
         <article className={styles["sec-words"]}>
             <Line mode="word" time={30}>
-                {`中共党中央发布《八一宣言》，
-                号召立即停止内战，一致抗日，
-                结成抗日民族统一战线。`}
+                {`1935年8月1日，《八一宣言》发
+                表，号召停止内战，组织全国统
+                一的国防政府和抗日联军一致抗
+                日。为一二九运动提供了思想准
+                备。`}
             </Line>
         </article>
         <img src={child} className={styles["sec-child"] + " animate__animated animate__fadeIn"} />
