@@ -59,9 +59,9 @@ const Map: FC<fnProps> = ({ changeAct }) => {
         <img src={fire8} className={styles["four-fire8"]} alt="fire" />
         <img src={fire9} className={styles["four-fire9"]} alt="fire" />
         <div className={styles['four-words']}>
-            <Line mode="word" time={40}>
+            <Line mode="word" time={90}>
                 {`北平学生的爱国斗争，得到了各
-                界爱国人士的支持与响应。`}
+界爱国人士的支持与响应。`}
             </Line>
         </div>
         <div className={styles['four-reminder'] + " animate__animated animate__fadeIn"}>
