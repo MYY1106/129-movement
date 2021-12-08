@@ -10,10 +10,10 @@ const Letter: FC<fnProps> = ({ changeAct }) => {
     return (<div className={styles["sec-bg-door"] + " " + styles["sec-bg"]} onClick={() => changeAct(5500)}>
         <article className={styles["sec-words"]}>
             <Line mode="word" time={20}>
-                {`12月6日， 我党收到消息， 在日
-                本侵略者逼迫下，国民党将于12
-                月9日成立“冀察政务委员会”，
-                企图实现华北自治。 ”`}
+                {`1935年11月，李常青、彭涛等共
+                产党员在党中央的指导下，成立
+                了中共北平临时工作委员会，主
+                要负责组织救亡运动。`}
             </Line>
         </article>
         <img src={letterWord} className={styles["sec-letter-words"] + " animate__animated animate__fadeIn"} />
