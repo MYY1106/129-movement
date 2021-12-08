@@ -4,7 +4,7 @@ import TypedLines from '../../../../../components/TypedLines'
 import styles from '../../../../../assets/style/FifthAct/resolution.module.less'
 import 'animate.css'
 
-const Resolution: React.FC<PageProps> = ({ changeAct }) => {
+const Resolution: React.FC<PageProps> = ({ changeActive }) => {
     let divNode: HTMLDivElement | null,
         passNode: HTMLDivElement | null,
         sealNode: HTMLDivElement | null
@@ -15,7 +15,8 @@ const Resolution: React.FC<PageProps> = ({ changeAct }) => {
             divNode!.addEventListener(
                 'click',
                 () => {
-                    ;(changeAct as Function)(2000)
+                    changeActive('isResolutionActive', false)
+                    changeActive('isProposalActive', true)
                 },
                 true
             )
@@ -24,7 +25,7 @@ const Resolution: React.FC<PageProps> = ({ changeAct }) => {
             setTimeout(() => {
                 passNode?.classList.add(styles['show'])
                 resolve('show resolution success!!')
-            }, 5600)
+            }, 7600)
         })
     }, [])
     return (
@@ -34,22 +35,27 @@ const Resolution: React.FC<PageProps> = ({ changeAct }) => {
         >
             <div className={styles['sentence-box']}>
                 <TypedLines
-                    lines="1 2月9日举行的市民大会通过了"
+                    lines="12月16日清晨，北平各校学生从"
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="反对冀察政务委员会，要求停止"
+                    lines="四面八方涌向天桥，举行了3万"
                     lastTimeTypedWords={16}
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="内战、一致对外，争取抗日等 8"
+                    lines="多人的市民大会，大会通过了组"
                     lastTimeTypedWords={30}
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="个决议案"
-                    lastTimeTypedWords={45}
+                    lines="织民众，共同抗敌，誓死反对日"
+                    lastTimeTypedWords={44}
+                    fastForward={true}
+                />
+                <TypedLines
+                    lines="本帝国主义侵略中国等决议案。"
+                    lastTimeTypedWords={58}
                     fastForward={true}
                 />
             </div>

@@ -21,6 +21,7 @@ const Black: React.FC<PageProps> = ({ changeActive }) => {
             <div
                 className={`${styles['sentences-box']} animate__animated animate__fadeIn`}
             >
+                <div className={styles['title']}>时代背景</div>
                 {`“九一八”事变之后，日本帝国
                 主义加紧侵略中国。他们在东北
                 地区推行殖民地化统治的同时， 

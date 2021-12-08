@@ -14,7 +14,6 @@ const Battle: React.FC<PageProps> = ({ changeAct }) => {
             }, 3400)
         }).then(() => {
             setTimeout(() => {
-                console.log(1)
                 divNode!.addEventListener('click', () => {
                     ;(changeAct as Function)(2000)
                 })
@@ -28,32 +27,22 @@ const Battle: React.FC<PageProps> = ({ changeAct }) => {
         >
             <div className={styles['sentence-box']}>
                 <TypedLines
-                    lines="当游行队伍行至西单牌楼平津卫"
+                    lines="当游行队伍经西单和东长安街"
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="戍司令部附近时，遇到军警的阻"
-                    lastTimeTypedWords={14}
+                    lines="时，学生遭到手持大刀、皮鞭、"
+                    lastTimeTypedWords={13}
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="拦和袭击。军警挥舞皮鞭、木棍"
-                    lastTimeTypedWords={28}
+                    lines="木棍、枪支的国民党军警袭击，"
+                    lastTimeTypedWords={27}
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="抽打手无寸铁的爱国学生。同学"
-                    lastTimeTypedWords={42}
-                    fastForward={true}
-                />
-                <TypedLines
-                    lines="们与军警展开了搏斗，当场有数"
-                    lastTimeTypedWords={56}
-                    fastForward={true}
-                />
-                <TypedLines
-                    lines="十人被捕。"
-                    lastTimeTypedWords={70}
+                    lines="30多人被捕，数百人受伤。"
+                    lastTimeTypedWords={41}
                     fastForward={true}
                 />
             </div>

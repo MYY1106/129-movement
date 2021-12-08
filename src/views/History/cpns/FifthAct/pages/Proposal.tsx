@@ -32,6 +32,10 @@ const Proposal: React.FC<PageProps> = ({ changeActive }) => {
                     lines="《为援助北平学生救国运动告工友书》"
                     lastTimeTypedWords={16}
                 />
+                <TypedLines
+                    lines="呼吁全国工人奋起救亡。"
+                    lastTimeTypedWords={33}
+                />
             </div>
             <div className={styles['proposal']}></div>
             <div

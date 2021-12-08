@@ -23,13 +23,13 @@ const FifthAct: React.FC<FirstActProps> = ({ nextAct }) => {
             {(() => {
                 if (actActiveConfig.isBlackActive)
                     return <Black changeActive={changeActive} />
+                if (actActiveConfig.isResolutionActive)
+                    return <Resolution changeActive={changeActive} />
                 if (actActiveConfig.isProposalActive)
                     return <Proposal changeActive={changeActive} />
                 if (actActiveConfig.isPraiseActive)
-                    return <Praise changeActive={changeActive} />
-                if (actActiveConfig.isResolutionActive)
                     return (
-                        <Resolution
+                        <Praise
                             changeActive={changeActive}
                             changeAct={nextAct}
                         />

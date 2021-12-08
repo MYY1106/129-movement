@@ -18,7 +18,7 @@ const Movement: React.FC<PageProps> = ({ changeActive }) => {
                     changeActive('isMovementActive', false)
                     changeActive('isHuangActive', true)
                 })
-            }, 4500)
+            }, 5500)
         })
     })
     return (
@@ -28,27 +28,27 @@ const Movement: React.FC<PageProps> = ({ changeActive }) => {
         >
             <div className={styles['sentence-box']}>
                 <TypedLines
-                    lines="十点半，新华门前汇集了许多请"
+                    lines="12月9日上午十点左右， 新华门"
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="愿队伍。请愿学生高举旗帜，高"
-                    lastTimeTypedWords={14}
+                    lines="前汇集了许多请愿队伍。请愿学"
+                    lastTimeTypedWords={16}
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="呼抗日救国口号，提出了反对成"
-                    lastTimeTypedWords={28}
+                    lines="生高举旗帜，高呼：“停止内战，"
+                    lastTimeTypedWords={30}
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="立防共自治委员会、停止内战等"
-                    lastTimeTypedWords={42}
+                    lines="一致对外”  “反对华北五省自"
+                    lastTimeTypedWords={45}
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="要求"
-                    lastTimeTypedWords={56}
+                    lines="治”等口号。"
+                    lastTimeTypedWords={60}
                     fastForward={true}
                 />
             </div>

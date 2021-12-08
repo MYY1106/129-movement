@@ -8,7 +8,7 @@ const Black: React.FC<PageProps> = ({ changeActive }) => {
         setTimeout(() => {
             divNode?.addEventListener('click', () => {
                 changeActive('isBlackActive', false)
-                changeActive('isProposalActive', true)
+                changeActive('isResolutionActive', true)
             })
         }, 2000)
     })
@@ -18,7 +18,14 @@ const Black: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentences-box']}>
-                {`一·二·九运动广泛地宣传了中国\n共产党与国民党停止内战、一致\n对外的抗日主张，掀起了全国抗\n日救国运动的新高潮`}
+                <div className={styles['title']}>事件影响</div>
+                {`一·二·九运动公开揭露了日本帝
+                国主义侵略中国 、并吞华北的
+                阴谋，打击了国民党政府的妥
+                协投降政策，大大地促进了中
+                国人民的觉醒，同时也配合了
+                红军北上抗日，促进了国内和
+                平和对日抗战的发展。`}
             </div>
         </div>
     )

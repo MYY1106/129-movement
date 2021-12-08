@@ -11,7 +11,7 @@ const Huang: React.FC<PageProps> = ({ changeActive }) => {
             setTimeout(() => {
                 newspaperContentNode?.classList.add(styles['show'])
                 resolve('newpaper success')
-            }, 5500)
+            }, 2500)
         }).then(() => {
             setTimeout(() => {
                 divNode!.addEventListener('click', () => {
@@ -28,28 +28,18 @@ const Huang: React.FC<PageProps> = ({ changeActive }) => {
         >
             <div className={styles['sentence-box']}>
                 <TypedLines
-                    lines="上午11时许， 北平爱国学生和广"
+                    lines="青年学生在街头演讲，传播爱国"
                     fastForward={true}
                 />
                 <TypedLines
-                    lines="大工人 、农民 、市民3万余人召"
+                    lines="热情。图为北京大学学生黄敬在"
                     fastForward={true}
-                    lastTimeTypedWords={16}
+                    lastTimeTypedWords={14}
                 />
                 <TypedLines
-                    lines="开市民大会。图为黄敬同志扶着"
+                    lines="电车上演讲。"
                     fastForward={true}
-                    lastTimeTypedWords={32}
-                />
-                <TypedLines
-                    lines="电车向群众讲话“人民！武装你"
-                    fastForward={true}
-                    lastTimeTypedWords={46}
-                />
-                <TypedLines
-                    lines="们自己！”"
-                    fastForward={true}
-                    lastTimeTypedWords={60}
+                    lastTimeTypedWords={28}
                 />
             </div>
             <div className={styles['newspaper']}></div>

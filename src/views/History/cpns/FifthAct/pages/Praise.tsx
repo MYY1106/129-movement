@@ -3,18 +3,17 @@ import TypedLines from '../../../../../components/TypedLines'
 import styles from '../../../../../assets/style/FifthAct/praise.module.less'
 import 'animate.css'
 
-const Praise: React.FC<PageProps> = ({ changeActive }) => {
+const Praise: React.FC<PageProps> = ({ changeAct }) => {
     let divNode: HTMLDivElement | null, praiseContentNode: HTMLDivElement | null
     useEffect(() => {
         new Promise(resolve => {
             setTimeout(() => {
                 praiseContentNode?.classList.add(styles['show'])
                 resolve('show praise success!!')
-            }, 5300)
+            }, 3500)
         }).then(() => {
             divNode!.addEventListener('click', () => {
-                changeActive('isPraiseActive', false)
-                changeActive('isResolutionActive', true)
+                ;(changeAct as Function)(2000)
             })
         })
     }, [])
@@ -24,11 +23,8 @@ const Praise: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentence-box']}>
-                <TypedLines lines="宋庆龄、鲁迅、陶行知等爱国知" />
-                <TypedLines
-                    lines="名人士纷纷表示支持学生运动。"
-                    lastTimeTypedWords={14}
-                />
+                <TypedLines lines="鲁迅等爱国知名人士表示支持学" />
+                <TypedLines lines="生运动。" lastTimeTypedWords={14} />
             </div>
             <div className={styles['praise']}></div>
             <div
