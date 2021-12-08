@@ -30,11 +30,9 @@ const Black: FC<fnProps> = ({ changeAct }) => {
                 }
             >
                 <Line mode="word" time={20}>
-                    {`当国民党将于12月9日成立 “冀
-                察政务委员会”的消息传来之时
-                北平学联在中共北平临时工委的
-                领导下 ，决定于9日举行学生大
-                请愿。`}
+                    {`在中共北平临时工委的领导下，
+                    北平市大中学校学生联合会决定
+                    于9日举行学生大请愿。`}
                 </Line>
             </article>
             <img src={desk} className={styles['sec-desk']} />
