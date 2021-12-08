@@ -18,7 +18,7 @@ const showSentence = async (el: HTMLDivElement, sentences: string[], t: number) 
 }
 
 const showWord = async (el: HTMLDivElement, words: string, t: number) => {
-    for (let i = 0; i < words.length; i++) {
+    for (let i = 0; i <= words.length; i++) {
         el.textContent = words.substring(0, i)
         await sleep(t)
     }
