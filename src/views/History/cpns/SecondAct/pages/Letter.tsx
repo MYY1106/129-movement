@@ -9,7 +9,7 @@ import letterWord from "assets/imgs/History/Second/letter-word.png"
 const Letter: FC<fnProps> = ({ changeAct }) => {
     return (<div className={styles["sec-bg-door"] + " " + styles["sec-bg"]} onClick={() => changeAct(5500)}>
         <article className={styles["sec-words"]}>
-            <Line mode="sentence">
+            <Line mode="word" time={20}>
                 {`12月6日， 我党收到消息， 在日
                 本侵略者逼迫下，国民党将于12
                 月9日成立“冀察政务委员会”，

@@ -20,13 +20,13 @@ import 'animate.css'
 function App() {
     return (
         <Router>
-            <EnhanceRouterMusic></EnhanceRouterMusic>
             <Switch>
                 <Route exact path="/" component={Home}></Route>
                 <Route exact path="/loading" component={Loading}></Route>
                 <Route exact path="/history" component={History}></Route>
                 <Route exact path="/end" component={End}></Route>
             </Switch>
+            <EnhanceRouterMusic></EnhanceRouterMusic>
         </Router>
     )
 }

@@ -1,5 +1,6 @@
 import { FC, useRef } from 'react'
 import { fnProps } from '../type'
+import Line from "../../../../../components/Lines"
 
 import styles from "../four.module.less"
 import fire1 from "assets/imgs/History/Fourth/fire1.png"
@@ -12,6 +13,7 @@ import fire7 from "assets/imgs/History/Fourth/fire7.png"
 import fire8 from "assets/imgs/History/Fourth/fire8.png"
 import fire9 from "assets/imgs/History/Fourth/fire9.png"
 import map from "assets/imgs/History/Fourth/map.png"
+
 
 const Map: FC<fnProps> = ({ changeAct }) => {
     let timer: NodeJS.Timeout;
@@ -57,10 +59,12 @@ const Map: FC<fnProps> = ({ changeAct }) => {
         <img src={fire8} className={styles["four-fire8"]} alt="fire" />
         <img src={fire9} className={styles["four-fire9"]} alt="fire" />
         <div className={styles['four-words']}>
-            北平学生的爱国斗争，得到了各
-            界爱国人士的支持与响应。
+            <Line mode="word" time={40}>
+                {`北平学生的爱国斗争，得到了各
+                界爱国人士的支持与响应。`}
+            </Line>
         </div>
-        <div className={styles['four-reminder']}>
+        <div className={styles['four-reminder'] + " animate__animated animate__fadeIn"}>
             长按火焰声援北平！
         </div>
     </div>)

@@ -8,7 +8,7 @@ import Line from "../../../../../components/Lines"
 const News: FC<fnProps> = ({ changeAct }) => {
     return (<div className={styles["sec-bg-bicycle"] + " " + styles["sec-bg"]} onClick={() => changeAct(2000)}>
         <article className={styles["sec-words"]}>
-            <Line mode="sentence">
+            <Line mode="word" time={30}>
                 {`中共党中央发布《八一宣言》，
                 号召立即停止内战，一致抗日，
                 结成抗日民族统一战线。`}
