@@ -18,7 +18,7 @@ const Black: React.FC<PageProps> = ({ changeActive }) => {
             ref={currentNode => (divNode = currentNode)}
         >
             <div className={styles['sentences-box']}>
-                {`一 二·九运动广泛地宣传了中国\n共产党与国民党停止内战、一致\n对外的抗日主张，掀起了全国抗\n日救国运动的新高潮`}
+                {`一·二·九运动广泛地宣传了中国\n共产党与国民党停止内战、一致\n对外的抗日主张，掀起了全国抗\n日救国运动的新高潮`}
             </div>
         </div>
     )

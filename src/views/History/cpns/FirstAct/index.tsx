@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Map from './pages/Map'
 import Black from './pages/Black'
 import Contract from './pages/Contract'
 import Student from './pages/Student'
 
 const FirstAct: React.FC<FirstActProps> = ({ nextAct }) => {
-    let timer: NodeJS.Timeout
     let [actActiveConfig, setActActiveConfig] = useState({
         isBlackActive: true,
         isMapActive: false,
@@ -18,12 +17,6 @@ const FirstAct: React.FC<FirstActProps> = ({ nextAct }) => {
             [pageActive]: isActive,
         }))
     }
-
-    useEffect(() => {
-        return () => {
-            clearTimeout(timer)
-        }
-    }, [])
 
     return (
         <div>
