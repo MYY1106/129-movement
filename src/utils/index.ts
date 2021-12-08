@@ -1,4 +1,4 @@
-import sleep from './sleep';
-import transition from './transition';
-
-export { sleep, transition }
+import sleep from './sleep'
+import transition from './transition'
+import PreLoad from './PreLoad'
+export { sleep, transition, PreLoad }

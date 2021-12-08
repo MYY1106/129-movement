@@ -15,11 +15,12 @@ import EnhanceRouterMusic from './components/Music'
 import Loading from './views/Loading'
 
 import 'animate.css'
-
+import { PreLoad } from '../src/utils'
 
 function App() {
     return (
         <Router>
+            <PreLoad />
             <Switch>
                 <Route exact path="/" component={Home}></Route>
                 <Route exact path="/loading" component={Loading}></Route>
